@@ -20,6 +20,7 @@ By adopting Vertical Slice Architecture, each feature is self-contained, making 
 - Dependency Injection (DI): Built-in .NET DI container for managing dependencies.
 
 **Project Structure**
+
 The project is organized into feature-based folders instead of traditional layers like "Controllers" or "Services." Each folder represents a vertical slice of functionality.
 Each feature (e.g., CreateProduct, GetProducts) has its own folder containing:
 - Command/Query classes (CreateProductCommand.cs, GetProductQuery.cs).
@@ -27,6 +28,7 @@ Each feature (e.g., CreateProduct, GetProducts) has its own folder containing:
 - Validators (CreateProductValidator.cs) for input validation using FluentValidation.
 
 **How It Works**
+
 API Endpoint: A controller receives an HTTP request and forwards it to MediatR.
 Command/Query: The request is encapsulated in a command or query object.
 Handler: MediatR routes the command/query to its corresponding handler, where the business logic is executed.
