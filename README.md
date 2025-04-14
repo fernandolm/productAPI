@@ -1,6 +1,7 @@
 **Vertical Slice Architecture with MediatR**
 
 **Overview**
+
 This project is a C# solution that implements Vertical Slice Architecture to structure the application and uses MediatR as the mediator pattern to handle API commands and queries. The goal of this architecture is to simplify the development process by focusing on individual features (or "slices") rather than traditional horizontal layers like controllers, services, and repositories.
 By adopting Vertical Slice Architecture, each feature is self-contained, making the codebase more modular, maintainable, and scalable.
 
